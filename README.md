@@ -11,23 +11,35 @@ El **Gobierno de Colombia** en alianza con el **CIAT** ha diseñado un programa 
 
 ## BackEnd
 Para instalar el backend basta con acceder a la carpeta:
+
 `cd server`
+
 Corremos el comando
+
 `npm i`
+
 Este instalara el node modules. Una vez instalado, se van al archivo .env y acomodan las variables local para la conexión con MySQL.
 
 Para tener datos adjunto el dump ejemplo, este se encuentra en la ruta:
+
 `server/db/CocoHealth20230216.sql`
 
 Para arrancar el proyecto corremos, este levantar el proyecto en el puerto 3400 o 3000:
+
 `npm run start:dev`
 
 ## FronEnd
 
 Para instalar el el frontend basta con acceder a la carpeta:
+
 `cd client`
+
 Y correr el comando de yarn:
+
 `yarn`
+
 Este instalara el node modules. Una vez instalado corrermos el comando:
+
 `yarn start`
+
 Esto levantara el proyecto en el puerto 3000.
