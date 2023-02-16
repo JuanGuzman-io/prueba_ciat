@@ -12,7 +12,7 @@ El **Gobierno de Colombia** en alianza con el **CIAT** ha diseñado un programa 
 ## BackEnd
 Para instalar el backend basta con acceder a la carpeta:
 `cd server`
-Corremos el comanda
+Corremos el comando
 `npm i`
 Este instalara el node modules. Una vez instalado, se van al archivo .env y acomodan las variables local para la conexión con MySQL.
 
