@@ -13,7 +13,7 @@ export default function AllCrops() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const allCrops = await DataFinder.get('/api/crop/all');
+                const allCrops = await DataFinder.get('api/crop/all');
                 setCrop(allCrops.data.response);
                 setLoad(false);
             } catch (error) {

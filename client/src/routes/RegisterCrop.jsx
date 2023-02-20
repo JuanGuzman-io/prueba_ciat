@@ -52,7 +52,7 @@ export default function RegisterCrop() {
 
     const newCrop = async () => {
         try {
-            await DataFinder.post('/api/crop/new', {
+            await DataFinder.post('api/crop/new', {
                 crop_name,
                 quantity,
                 crop_status,

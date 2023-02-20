@@ -11,7 +11,7 @@ const MainMap = () => {
     useEffect(() => {
         const cropFetch = async () => {
             try {
-                const crop = await DataFinder.get('/api/crop/all');
+                const crop = await DataFinder.get('api/crop/all');
                 setCrop(crop.data.response);
             } catch (error) {
                 console.log("🚀 ~ file: MainMap.jsx:16 ~ cropFetch ~ error", error)

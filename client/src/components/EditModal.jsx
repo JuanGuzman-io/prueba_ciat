@@ -35,7 +35,7 @@ const EditModal = ({ id }) => {
     useEffect(() => {
         const newCrop = async () => {
             try {
-                const crop = await DataFinder.get(`/api/crop/${id}`);
+                const crop = await DataFinder.get(`api/crop/${id}`);
                 setCrop_name(crop.data.response[0].crop_name);
                 setQuantity(crop.data.response[0].quantity);
             } catch (error) {
@@ -54,7 +54,7 @@ const EditModal = ({ id }) => {
 
     const updateCrop = async (e) => {
         try {
-            await DataFinder.patch(`/api/crop/update/${id}`, {
+            await DataFinder.patch(`api/crop/update/${id}`, {
                 crop_name,
                 crop_status,
                 quantity
