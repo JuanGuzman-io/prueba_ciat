@@ -1,7 +1,7 @@
 import axios from 'axios';
-const URL = process.env.URL;
+const REACT_APP_URL = process.env.URL;
 
-const baseURL = URL;
+const baseURL = REACT_APP_URL;
 export default axios.create(
     {
         baseURL,
